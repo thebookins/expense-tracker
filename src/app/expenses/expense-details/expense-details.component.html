@@ -6,9 +6,13 @@
 </div>
 <div *ngIf="expense" class="row">
   <form class="col-md-12">
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="expense-date">Date</label>
-      <input type="date" class="form-control" name="expense-date" [(ngModel)]="expense.date" placeholder="Date"/>
+      <input class="form-control" name="expense-date" [(ngModel)]="expense.date" placeholder="Date"/>
+    </div> -->
+    <div class="form-group">
+      <label for="expense-description">Amount</label>
+      <input class="form-control" name="expense-description" [(ngModel)]="expense.description" placeholder="Description"/>
     </div>
     <div class="form-group">
       <label for="expense-amount">Amount</label>
