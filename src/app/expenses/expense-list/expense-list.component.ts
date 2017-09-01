@@ -38,6 +38,7 @@ export class ExpenseListComponent implements OnInit {
   createNewExpense() {
     var expense: Expense = {
       date: new Date(),
+      description: "",
       amount: 0
     };
 
