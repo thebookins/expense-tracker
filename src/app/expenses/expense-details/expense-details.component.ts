@@ -21,7 +21,7 @@ export class ExpenseDetailsComponent {
 
   constructor(private expenseService: ExpenseService) { }
 
-  categories: string[] = ["Eating out", "Groceries", "House", "Transport"]
+  categories: string[] = ["Eating out", "Groceries", "House", "Transport", "Gifts"]
 
   createExpense(expense: Expense) {
     this.expenseService.createExpense(expense).then((newExpense: Expense) => {
