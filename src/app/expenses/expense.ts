@@ -1,5 +1,3 @@
-import { Category } from './category';
-
 export class Expense {
   _id?: string;
   description: string;
