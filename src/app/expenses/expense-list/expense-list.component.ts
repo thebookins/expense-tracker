@@ -4,7 +4,7 @@ import { ExpenseService } from '../expense.service';
 import { ExpenseDetailsComponent } from '../expense-details/expense-details.component';
 
 @Component({
-  selector: 'app-expense-list',
+  selector: 'expense-list',
   templateUrl: './expense-list.component.html',
   styleUrls: ['./expense-list.component.css'],
   providers: [ExpenseService]
