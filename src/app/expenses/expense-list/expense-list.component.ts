@@ -39,7 +39,8 @@ export class ExpenseListComponent implements OnInit {
     var expense: Expense = {
       date: new Date(),
       description: "",
-      amount: 0
+      amount: 0,
+      category: "Other"
     };
 
     // By default, a newly-created expense will have the selected state.

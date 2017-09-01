@@ -5,5 +5,5 @@ export class Expense {
   description: string;
   date: Date;
   amount: number;
-  category: Category;
+  category: string;
 }
