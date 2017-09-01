@@ -6,7 +6,7 @@
         *ngFor="let expense of expenses"
         (click)="selectExpense(expense)"
         [class.active]="expense === selectedExpense">
-        {{expense.amount}}
+        {{expense.description}}
       </li>
     </ul>
     <button class="btn btn-warning" (click)="createNewExpense()">New</button>
