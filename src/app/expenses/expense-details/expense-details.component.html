@@ -25,13 +25,6 @@
         <option *ngFor="let c of categories" [attr.value]="c">{{c}}</option>
       </select>
     </div>
-
-    <label>Name</label>
-    <select [(ngModel)]="name" name="Select name" class="ui fluid search selection dropdown">
-      <option *ngFor="#n of names" [attr.value]="n">{{n}}</option>
-    </select>
-
-
     <button class="btn btn-primary" *ngIf="!expense._id" (click)="createExpense(expense)">Create</button>
     <button class="btn btn-info" *ngIf="expense._id" (click)="updateExpense(expense)">Update</button>
     <button class="btn btn-danger" *ngIf="expense._id" (click)="deleteExpense(expense._id)">Delete</button>
