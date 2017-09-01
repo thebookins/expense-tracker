@@ -10,7 +10,7 @@ import { ExpenseService } from '../expense.service';
 
 export class ExpenseDetailsComponent {
   @Input()
-  contact: Contact;
+  expense: Expense;
 
   @Input()
   createHandler: Function;
