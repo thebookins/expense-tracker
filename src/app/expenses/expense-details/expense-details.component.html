@@ -22,7 +22,7 @@
     <div class="form-group">
       <label for="expense-category">Category</label>
       <!-- <select [(ngModel)]="expense.category" name="expense-category" class="ui fluid search selection dropdown"> -->
-      <select [(ngModel)]="expense.category" name="expense-category">
+      <select class="form-control" [(ngModel)]="expense.category" name="expense-category">
         <option *ngFor="let c of categories" [attr.value]="c">{{c}}</option>
       </select>
     </div>
