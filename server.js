@@ -47,7 +47,14 @@ function handleError(res, reason, message, code) {
  */
 
 app.get("/api/expenses", function(req, res) {
-  db.collection(EXPENSES_COLLECTION).find({}).toArray(function(err, docs) {
+  var startDate = new Date(); 
+  startDate.setSeconds(0);
+  startDate.setHours(0);
+  startDate.setMinutes(0);
+  
+  db.collection(EXPENSES_COLLECTION).find({
+      $gte:startDate
+  }).toArray(function(err, docs) {
     if (err) {
       handleError(res, err.message, "Failed to get expenses.");
     } else {
