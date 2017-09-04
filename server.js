@@ -53,7 +53,9 @@ app.get("/api/expenses", function(req, res) {
   startDate.setMinutes(0);
   
   db.collection(EXPENSES_COLLECTION).find({
-    $gte:startDate
+    "date": {
+      $gte : startDate
+    }
   }).toArray(function(err, docs) {
     if (err) {
       handleError(res, err.message, "Failed to get expenses.");
